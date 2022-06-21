@@ -28,7 +28,7 @@ export default function Card(props) {
       <h6>max</h6>
       <span className={Style.span}>{props.max}°</span>
     </div>
-    <img className={Style.data} alt="" src={'http://openweathermap.org/img/wn/'+props.img+'@2x.png'}/>
+    <img className={Style.data} alt="" src={'https://openweathermap.org/img/wn/'+props.img+'@2x.png'}/>
   </div>
   </div>
 };

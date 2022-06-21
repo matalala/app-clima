@@ -5,13 +5,13 @@ import style from './css/SerchBar.module.css'
 
 export default function SearchBar(props) {
   // acá va tu código
-  let apiKey="c8e7aa332c9048be7dd4be7b01a1f833"
+  
   let [stado, setstado]= React.useState("")
  function actualizar(ciu){
    setstado(stado=ciu)
  }
  function ciudads(porp){
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${porp}&appid=${apiKey}&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${porp}&appid=${process.env.REACT_APP_KEY}&units=metric`)
   .then(r => r.json())
   .then((recurso) => {
     if(recurso.main !== undefined){
