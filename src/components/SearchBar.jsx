@@ -45,7 +45,7 @@ export default function SearchBar(props) {
     }
   }
  return<div className={style.conten}>
-   <input className={style.iput}
+   <input className={style.input}
   placeholder="Ciudad..."
     onChange={(ev)=>{
    actualizar(ev.target.value)
