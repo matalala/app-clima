@@ -1,0 +1,13 @@
+.contenedor{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    
+}
+
+@media screen and (max-width: 910px) {
+  .contenedor{
+      display:flexbox;
+      margin: 0px 17%;
+  }   
+}
